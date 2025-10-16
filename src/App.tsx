@@ -121,7 +121,8 @@ function App() {
       <div className="pt-16">
         {!searchQuery && !selectedGenre && <Hero anime={featuredAnime} />}
 
-        <div className="space-y-8 py-8">
+        {/* Perubahan utama untuk membuat tampilan seperti Netflix: -mt-[80px] */}
+        <div className="pb-12 -mt-[80px] relative z-10">
           {searchQuery || selectedGenre ? (
             <section className="py-12">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -168,7 +169,8 @@ function App() {
               <AnimeSection title="Trending Now" animes={displayAnimes} />
               <AnimeSection title="Latest Releases" animes={latestAnimes} />
 
-              <section className="py-12">
+              {/* Perubahan: Menggunakan mt-12 untuk konsistensi jarak */}
+              <section className="mt-12">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                   <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
                     Browse by Genre

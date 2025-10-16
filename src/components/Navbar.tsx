@@ -19,9 +19,10 @@ export default function Navbar({ genres, searchQuery, onSearchChange, onGenreSel
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-8">
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-white tracking-tight">
+              {/* Perubahan: Mengubah h1 menjadi a tag yang berfungsi sebagai logo/home link */}
+              <a href="#" className="text-2xl font-bold text-white tracking-tight">
                 WIBU<span className="text-red-600">FLIX</span>
-              </h1>
+              </a>
             </div>
 
             <div className="hidden md:flex items-center space-x-6">

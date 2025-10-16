@@ -8,14 +8,14 @@ interface HeroProps {
 export default function Hero({ anime }: HeroProps) {
   if (!anime) {
     return (
-      <div className="relative h-[600px] bg-zinc-900 animate-pulse">
+      <div className="relative h-[80vh] bg-zinc-900 animate-pulse">
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
       </div>
     );
   }
 
   return (
-    <div className="relative h-[600px] overflow-hidden">
+    <div className="relative h-[80vh] overflow-hidden">
       <div className="absolute inset-0">
         <img
           src={anime.hero_image_url}
